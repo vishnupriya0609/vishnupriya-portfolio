@@ -7,12 +7,12 @@ function Hero() {
 
         <h1>Vishnupriya T</h1>
 
-        <h2>Computer Science Engineer</h2>
+        <h2>Aspiring Data Engineer</h2>
 
         <p className="hero-description">
-          A passionate Computer Science Engineering graduate interested in
-          software development, data, cloud technologies, and building
-          practical technology solutions.
+           A passionate Computer Science Engineering graduate aspiring to build
+          a career in Data Engineering, with an interest in data pipelines,
+          cloud technologies, and building practical data solutions.
         </p>
 
         <div className="hero-skills">
