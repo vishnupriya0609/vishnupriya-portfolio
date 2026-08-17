@@ -871,3 +871,230 @@ footer a:hover {
     text-align: center;
   }
 }
+/* =========================================
+   PROJECT COVER IMAGE
+   ========================================= */
+
+.project-cover {
+  width: 100%;
+  height: 250px;
+
+  margin-bottom: 28px;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--border);
+
+  background: #050b08;
+}
+
+.project-cover-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.project-cover:hover .project-cover-image {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   PROJECT BUTTONS
+   ========================================= */
+
+.project-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.project-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 10px 15px;
+
+  border: 1px solid var(--green);
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: var(--green);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: var(--green);
+
+  color: #061009;
+
+  transform: translateY(-2px);
+}
+
+
+/* Button reset */
+
+.project-image-btn {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   PROJECT IMAGE GALLERY
+   ========================================= */
+
+.project-gallery {
+  margin-top: 30px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid var(--border);
+}
+
+
+/* Gallery heading */
+
+.gallery-title {
+  margin-bottom: 18px;
+}
+
+.gallery-title span {
+  display: block;
+
+  color: var(--green);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.gallery-title p {
+  margin: 6px 0 0;
+
+  color: var(--gray);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   SIX IMAGE GRID
+   ========================================= */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+
+/* Individual image */
+
+.gallery-item {
+  position: relative;
+
+  display: block;
+
+  height: 150px;
+
+  overflow: hidden;
+
+  border-radius: 9px;
+
+  border: 1px solid var(--border);
+
+  background: #050b08;
+}
+
+
+/* Image */
+
+.gallery-item img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* Hover */
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+
+/* Image number */
+
+.image-number {
+  position: absolute;
+
+  left: 8px;
+
+  bottom: 8px;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: rgba(5, 11, 8, 0.85);
+
+  color: var(--green);
+
+  font-family: monospace;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .project-cover {
+    height: 210px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    height: 200px;
+  }
+
+}
